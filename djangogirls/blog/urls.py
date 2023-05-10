@@ -8,6 +8,7 @@ urlpatterns = [
     path('', views.post_list, name='post_list'),
     path('post/<int:pk>/', views.post_detail, name='postdetail'),
     path('hello/', views.hello, name='hello'),
+    path('post/new/', views.post_new, name='post_new'),
 ]
 
 def post_list(request):
